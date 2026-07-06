@@ -1,0 +1,312 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f8f9fa;
+    color:#333;
+    line-height:1.6;
+}
+
+/* ================= NAVBAR ================= */
+
+.navbar{
+    background:#0f172a !important;
+    padding:15px 0;
+    transition:.4s;
+}
+
+.navbar-brand{
+    font-size:28px;
+    font-weight:bold;
+    color:#38bdf8 !important;
+}
+
+.nav-link{
+    color:#fff !important;
+    margin-left:15px;
+    font-weight:500;
+    transition:.3s;
+}
+
+.nav-link:hover{
+    color:#38bdf8 !important;
+}
+
+/* ================= HERO ================= */
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    background:linear-gradient(135deg,#0f172a,#2563eb);
+    color:#fff;
+    padding-top:80px;
+}
+
+.hero h3{
+    font-size:28px;
+}
+
+.hero h1{
+    font-size:60px;
+    font-weight:700;
+}
+
+.hero h2{
+    color:#38bdf8;
+    margin:20px 0;
+}
+
+.hero p{
+    margin:25px 0;
+    font-size:18px;
+}
+
+.profile-img{
+    width:380px;
+    height:380px;
+    object-fit:cover;
+    border-radius:50%;
+    border:8px solid white;
+    box-shadow:0 0 30px rgba(255,255,255,.4);
+}
+
+/* ================= BUTTONS ================= */
+
+.btn-primary{
+    background:#38bdf8;
+    border:none;
+    padding:12px 30px;
+}
+
+.btn-primary:hover{
+    background:#0ea5e9;
+}
+
+.btn-outline-light{
+    padding:12px 30px;
+}
+
+/* ================= SECTIONS ================= */
+
+section{
+    padding:90px 0;
+}
+
+section h2{
+    font-size:42px;
+    font-weight:bold;
+    margin-bottom:50px;
+    color:#0f172a;
+}
+
+/* ================= ABOUT ================= */
+
+#about p{
+    font-size:18px;
+    max-width:850px;
+    margin:auto;
+    text-align:center;
+}
+
+/* ================= CARDS ================= */
+
+.card{
+    border:none;
+    border-radius:15px;
+    transition:.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 12px 30px rgba(0,0,0,.15);
+}
+
+.card-body{
+    padding:30px;
+}
+
+/* ================= SKILLS ================= */
+
+#skills i{
+    color:#2563eb;
+    margin-bottom:20px;
+}
+
+#skills h4{
+    margin-bottom:20px;
+    font-weight:600;
+}
+
+#skills p{
+    margin-bottom:8px;
+}
+
+/* ================= PROJECT ================= */
+
+#projects .card{
+    border-left:6px solid #2563eb;
+}
+
+/* ================= INTERNSHIP ================= */
+
+#internship ul{
+    margin-top:15px;
+}
+
+#internship li{
+    margin-bottom:10px;
+}
+
+/* ================= ACHIEVEMENTS ================= */
+
+#achievements i{
+    font-size:60px;
+    color:#2563eb;
+    margin-bottom:20px;
+}
+
+#achievements h5{
+    margin-top:15px;
+}
+
+/* ================= CERTIFICATES ================= */
+
+#certificates .card{
+    text-align:center;
+}
+
+/* ================= CONTACT ================= */
+
+#contact input,
+#contact textarea{
+    border-radius:10px;
+    border:1px solid #ccc;
+    padding:12px;
+}
+
+#contact input:focus,
+#contact textarea:focus{
+    border-color:#2563eb;
+    box-shadow:none;
+}
+
+#contact p{
+    font-size:18px;
+}
+
+#contact i{
+    color:#2563eb;
+    margin-right:10px;
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+    background:#0f172a;
+    color:#fff;
+    padding:25px;
+    text-align:center;
+}
+
+/* ================= SCROLLBAR ================= */
+
+::-webkit-scrollbar{
+    width:8px;
+}
+
+::-webkit-scrollbar-track{
+    background:#ddd;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#2563eb;
+    border-radius:20px;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:992px){
+
+.hero{
+    text-align:center;
+}
+
+.hero h1{
+    font-size:45px;
+}
+
+.profile-img{
+    width:280px;
+    height:280px;
+    margin-top:40px;
+}
+
+}
+
+@media(max-width:768px){
+
+.hero h1{
+    font-size:38px;
+}
+
+.hero h3{
+    font-size:22px;
+}
+
+.hero p{
+    font-size:16px;
+}
+
+section h2{
+    font-size:34px;
+}
+
+.profile-img{
+    width:230px;
+    height:230px;
+}
+
+.card{
+    margin-bottom:25px;
+}
+
+}
+
+@media(max-width:576px){
+
+.navbar-brand{
+    font-size:22px;
+}
+
+.hero h1{
+    font-size:32px;
+}
+
+.hero h2{
+    font-size:22px;
+}
+
+.hero p{
+    font-size:15px;
+}
+
+.btn{
+    margin-top:10px;
+    width:100%;
+}
+
+.profile-img{
+    width:200px;
+    height:200px;
+}
+
+}
